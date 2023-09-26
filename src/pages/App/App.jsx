@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import NewOrderPage from "../NewOrderPage/NewOrderPage.jsx"
 import OrderHistoryPage from "../OrderHistoryPage/OrderHistoryPage.jsx"
-import AuthPage from "../AuthPage/AuthPage.jsx"
+import AuthPage from "../LoginPage/AuthPage.jsx"
 import { Routes, Route } from 'react-router-dom'
 import NavBar from '../../components/NavBar/NavBar'
 import { getUser } from '../../utilities/users-service'

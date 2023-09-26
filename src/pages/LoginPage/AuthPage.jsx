@@ -4,7 +4,7 @@ import LoginForm from '../../components/LoginForm/LoginForm'
 function AuthPage(props) {
     return (
         <main>
-            <h1>AuthPage</h1>
+            <h1>Personal To Do List</h1>
             <SignUpForm setUser={props.setUser} />
             <LoginForm setUser={props.setUser} />
         </main>
