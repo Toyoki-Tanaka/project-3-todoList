@@ -1,5 +1,4 @@
 import { checkToken } from '../../utilities/users-service'
-
 function OrderHistoryPage() {
 
     const handleCheckToken = async () => {

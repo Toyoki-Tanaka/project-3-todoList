@@ -21,16 +21,15 @@ function NavBar(props) {
             <Link to="" onClick={handleLogOut}>Log out</Link> */}
 
                 <ul>
-                    <li>Home</li>
+                    <Link to="/">Home</Link>
+                    <Link to="/todo/new">New List</Link>
                     <li>New Task</li>
                     <li>View Tasks</li>
                     <Link to="" onClick={handleLogOut}>Log out</Link>
                 </ul>
+
+                <h1>Welcome, {props.user.name}</h1>
             </nav>
-            <h1>Welcome, {props.user.name}</h1>
-            <div className={styles.about}>
-                <h1>Welcome to your to-do list! Increase your productivity by logging your tasks! </h1>
-            </div>
         </div>
     )
 }
