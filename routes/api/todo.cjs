@@ -4,10 +4,13 @@ const todoCtrl = require('../../controllers/api/todo.cjs');
 
 
 router.get('/list', todoCtrl.index);
-// GET /api/items/:id
-router.get('/:id', todoCtrl.show);
+
+router.get('/:id/edit', todoCtrl.edit);
 
 router.post('/new', todoCtrl.create)
 
+router.delete('/list/:id', todoCtrl.del)
+
+router.get('/:id', todoCtrl.show)
 
 module.exports = router;

@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react'
 import * as todoAPI from '../../utilities/todo-api'
 // import NewToDoPage from '../NewToDoPage/NewToDoPage'
+import { Link } from 'react-router-dom'
 
 function ToDoList() {
 
     const [toDoList, setToDoList] = useState([])
 
+    const [toDoDeleted, setToDoDeleted] = useState(false)
     // useEffect(async () => {
     //     try {
     //         const result = await todoAPI.showToDo()
@@ -26,8 +28,17 @@ function ToDoList() {
             }
         }
         fetchToDoList()
-    }, [])
+    }, [toDoDeleted])
 
+    const handleDelete = async (id) => {
+
+        try {
+            const deleteButton = await todoAPI.deleteToDo(id)
+            setToDoDeleted(!toDoDeleted)
+        } catch (err) {
+            console.log(err)
+        }
+    }
     return (
         toDoList.map((todo, i) => {
             return (
@@ -35,7 +46,10 @@ function ToDoList() {
                     <p>Task: {todo.task}</p>
                     <p>Completed: {todo.completed.toString()}</p>
                     <p>Due Date: {todo.dueDate}</p>
-                    <a href={`/${todo._id}`}><button>Edit button</button></a>
+                    <Link to={`${todo._id}/edit`}><button>Edit button</button></Link>
+                    <button onClick={() => {
+                        handleDelete(todo._id)
+                    }}>Delete task</button>
                 </div >
             )
         })
