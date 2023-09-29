@@ -21,10 +21,8 @@ function NavBar(props) {
             <Link to="" onClick={handleLogOut}>Log out</Link> */}
 
                 <ul>
-                    <Link to="/">Home</Link>
-                    <Link to="/todo/new">New List</Link>
-                    <li>New Task</li>
-                    <li>View Tasks</li>
+                    <Link to="/todo/new">Home</Link>
+                    <Link to="todo/list">To-do List</Link>
                     <Link to="" onClick={handleLogOut}>Log out</Link>
                 </ul>
 

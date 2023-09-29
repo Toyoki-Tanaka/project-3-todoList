@@ -4,6 +4,8 @@ const path = require('path');
 const favicon = require('serve-favicon');
 const logger = require('morgan');
 
+const ensureLoggedIn = require('./config/ensureLoggedIn.cjs');
+
 require("./config/database.cjs")
 
 const app = express();
@@ -35,6 +37,12 @@ const userRouter = require('./routes/api/users.cjs')
 // If the request starts with /api/users it directs the 
 // request to the   
 app.use('/api/users', userRouter)
+
+const todoRouter = require('./routes/api/todo.cjs')
+//Router setup
+// If the request starts with /api/users it directs the 
+// request to the   
+app.use('/api/todos', ensureLoggedIn, require('./routes/api/todo.cjs'))
 
 
 

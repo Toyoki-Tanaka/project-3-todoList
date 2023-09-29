@@ -2,9 +2,12 @@ const express = require('express');
 const router = express.Router();
 const todoCtrl = require('../../controllers/api/todo.cjs');
 
-// GET /api/items
-router.get('/', todoCtrl.index);
+
+router.get('/list', todoCtrl.index);
 // GET /api/items/:id
-router.get('/:id', itemsCtrl.show);
+router.get('/:id', todoCtrl.show);
+
+router.post('/new', todoCtrl.create)
+
 
 module.exports = router;

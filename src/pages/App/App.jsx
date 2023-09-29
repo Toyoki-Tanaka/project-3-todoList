@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import NewOrderPage from "../NewOrderPage/NewOrderPage.jsx"
-import OrderHistoryPage from "../OrderHistoryPage/OrderHistoryPage.jsx"
+import NewToDoPage from '../NewToDoPage/NewToDoPage.jsx'
+import ToDoList from '../ToDoList/ToDoList.jsx'
 import AuthPage from "../LoginPage/AuthPage.jsx"
 import { Routes, Route } from 'react-router-dom'
 import NavBar from '../../components/NavBar/NavBar'
@@ -16,8 +16,9 @@ function App() {
           <>
             <NavBar user={user} setUser={setUser} />
             <Routes>
-              <Route path="/todo/list" element={<OrderHistoryPage />} />
-              <Route path="/todo/new" element={<NewOrderPage />} />
+              <Route path="/todo/list" element={<ToDoList />} />
+              <Route path="/todo/new" element={<NewToDoPage />} />
+              {/* <Route path="/todo/:id" element={} */}
 
             </Routes>
           </>
