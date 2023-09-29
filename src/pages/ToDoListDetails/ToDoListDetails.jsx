@@ -9,6 +9,8 @@ function ToDoListDetails(props) {
         completed: false
     });
 
+
+
     const handleChange = (event) => {
 
         setListDetails({ ...listDetails, [event.target.name]: event.target.value });
@@ -41,6 +43,8 @@ function ToDoListDetails(props) {
             console.log(toDoDetails)
         } catch (err) {
             console.log(err)
+            console.log(listDetails)
+            console.log(id)
         }
     }
 
@@ -55,7 +59,9 @@ function ToDoListDetails(props) {
                     <input type="date" name="dueDate" onChange={handleChange} /> <br />
 
                     <label>Completed?</label>
-                    <input type="checkbox" name="completed" onChange={handleChange} /> <br />
+                    <input type="checkbox" name="completed" onClick={() => {
+                        setListDetails({ ...listDetails, completed: !listDetails.completed })
+                    }} /> <br />
 
                     <input type="submit" value="Update todo" />
 

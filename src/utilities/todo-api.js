@@ -18,7 +18,7 @@ export function deleteToDo(id) {
 
 // Edit a specific to-do 
 export function editToDo(id, listDetails) {
-    return sendRequest(`${BASE_URL}/${id}/edit, 'GET`, listDetails)
+    return sendRequest(`${BASE_URL}/list/${id}/edit`, 'PUT', listDetails)
 }
 
 // Show individual to-do
