@@ -52,14 +52,14 @@ function ToDoListDetails(props) {
         <div>
             <div>
                 <form onSubmit={handleSubmit}>
-                    <label>Task</label>
-                    <input type="textarea" name="task" onChange={handleChange} /> <br />
+                    {/* <label>Task</label> */}
+                    Task:<input type="textarea" name="task" onChange={handleChange} /> <br />
 
-                    <label>Due Date</label>
-                    <input type="date" name="dueDate" onChange={handleChange} /> <br />
+                    {/* <label>Due Date</label> */}
+                    Due Date:<input type="date" name="dueDate" onChange={handleChange} /> <br />
 
-                    <label>Completed?</label>
-                    <input type="checkbox" name="completed" onClick={() => {
+                    {/* <label>Completed?</label> */}
+                    Completed?<input type="checkbox" name="completed" onClick={() => {
                         setListDetails({ ...listDetails, completed: !listDetails.completed })
                     }} /> <br />
 

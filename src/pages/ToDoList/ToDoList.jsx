@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import * as todoAPI from '../../utilities/todo-api'
-// import NewToDoPage from '../NewToDoPage/NewToDoPage'
 import { Link } from 'react-router-dom'
+import styles from './ToDoList.module.css'
 
 function ToDoList() {
 
@@ -42,11 +42,11 @@ function ToDoList() {
     return (
         toDoList.map((todo, i) => {
             return (
-                <div key={i}>
+                <div key={i} id="tasks">
                     <p>Task: {todo.task}</p>
                     <p>Completed: {todo.completed.toString()}</p>
                     <p>Due Date: {todo.dueDate}</p>
-                    <Link to={`/${todo._id}/edit`}><button>Edit button</button></Link>
+                    <Link to={`${todo._id}/edit`}><button>Edit button</button></Link>
                     <button onClick={() => {
                         handleDelete(todo._id)
                     }}>Delete task</button>

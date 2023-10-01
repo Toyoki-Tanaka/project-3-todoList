@@ -49,16 +49,17 @@ function NewToDoPage(props) {
     return (
         <div>
             <div className={styles.about}>
-                <h1>Welcome to your to-do list! Increase your productivity by logging your tasks! </h1>
+                <h1 id="welcome">Welcome to your to-do list! Increase your productivity by logging your tasks! </h1>
                 <form onSubmit={handleSubmit}>
-                    <label>Task</label>
-                    <input type="textarea" name="task" onChange={handleChange} /> <br />
+                    {/* <label>Task</label> */}
 
-                    <label>Due By</label>
-                    <input type="date" name="dueDate" onChange={handleChange} /> <br />
+                    Task: <input type="textarea" name="task" onChange={handleChange} /> <br />
 
-                    <label>Completed?</label>
-                    <input type="checkbox" name="completed" onChange={handleChange} /> <br />
+                    {/* <label>Due By</label> */}
+                    Due By: <input type="date" name="dueDate" onChange={handleChange} /> <br />
+
+                    {/* <label>Completed?</label> */}
+                    Completed? <input type="checkbox" name="completed" onChange={handleChange} /> <br />
 
                     <input type="submit" value="Submit form" />
 
