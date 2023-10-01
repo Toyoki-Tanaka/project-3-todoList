@@ -2,7 +2,6 @@ import styles from './NewToDoPage.module.css'
 // import axios from 'axios'
 import * as todoAPI from '../../utilities/todo-api'
 import { useState } from 'react';
-// import * as usersService from '../../utilities/users-service';
 import { useNavigate } from 'react-router-dom';
 
 function NewToDoPage(props) {

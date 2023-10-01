@@ -5,7 +5,7 @@ const todoCtrl = require('../../controllers/api/todo.cjs');
 
 router.get('/list', todoCtrl.index);
 
-router.put('/:id/edit', todoCtrl.edit);
+router.put('/list/:id/edit', todoCtrl.edit);
 
 router.post('/new', todoCtrl.create)
 
