@@ -52,9 +52,10 @@ function ToDoListDetails(props) {
     return (
         <div>
             <div>
+
                 <form onSubmit={handleSubmit}>
                     {/* <label>Task</label> */}
-                    Task:<input type="textarea" name="task" onChange={handleChange} /> <br />
+                    Task:<input type="textarea" name="task" onChange={handleChange} placeholder={prevData?.task} /> <br />
 
                     {/* <label>Due Date</label> */}
                     Due Date:<input type="date" name="dueDate" onChange={handleChange} /> <br />

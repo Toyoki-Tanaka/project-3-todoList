@@ -13,7 +13,7 @@ Application Link: https://to-do-list-hi94.onrender.com/
 
 # Unsolved Problems
 - Date conversion (SOLVED)
-- Placeholder text for edit 
+- Placeholder text for edit (SOLVED)
 # Future Enhancements
 
 - Redirect the page when the user makes a new task and when the user updates a task instead of sending an alert
