@@ -1,6 +1,6 @@
 # Introduction
 
-This is a to-do application that allows users to keep track of their tasks. Users have access to full CRUD (Create, Read, Update, Delete) functionality for each of their tasks.
+This is a single-page to-do application that allows users to keep track of their tasks. Users have access to full CRUD (Create, Read, Update, Delete) functionality for each of their tasks.
 
 # Technologies used
 
@@ -12,7 +12,7 @@ Trello Board: https://trello.com/invite/b/JqbarVFc/ATTI81f92376fd9c2a919221011f5
 Application Link: []
 
 # Unsolved Problems
-- Date conversion
+- Date conversion (SOLVED)
 - Placeholder text for edit 
 # Future Enhancements
 
