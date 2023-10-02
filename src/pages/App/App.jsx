@@ -17,8 +17,8 @@ function App() {
           <>
             <NavBar user={user} setUser={setUser} />
             <Routes>
-              <Route path="/todo/list" element={<ToDoList />} />
-              <Route path="/todo/new" element={<NewToDoPage />} />
+              <Route path="/todo/list" element={<ToDoList user={user} setUser={setUser} />} />
+              <Route path="/todo/new" element={<NewToDoPage user={user} setUser={setUser} />} />
               <Route path="/todo/list/:id/edit" element={<ToDoListDetails />} />
 
             </Routes>

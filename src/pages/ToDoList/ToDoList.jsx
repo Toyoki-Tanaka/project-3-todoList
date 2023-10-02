@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
 import * as todoAPI from '../../utilities/todo-api'
+import NavBar from '../../components/NavBar/NavBar.jsx'
 import { Link } from 'react-router-dom'
 import styles from './ToDoList.module.css'
 
-function ToDoList() {
+function ToDoList(props) {
 
     const [toDoList, setToDoList] = useState([])
 
@@ -23,6 +24,8 @@ function ToDoList() {
             try {
                 const result = await todoAPI.showToDo()
                 setToDoList(result)
+                console.log(result)
+                console.log(props.user)
             } catch (err) {
                 console.log(err)
             }
@@ -40,7 +43,8 @@ function ToDoList() {
         }
     }
     return (
-        toDoList.map((todo, i) => {
+        // filter based on userId
+        toDoList.filter(todos => todos.userId === props.user._id).map((todo, i) => {
             return (
                 <div key={i} id="tasks">
                     <p>Task: {todo.task}</p>

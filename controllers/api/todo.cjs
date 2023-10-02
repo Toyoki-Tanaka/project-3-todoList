@@ -33,6 +33,7 @@ async function create(req, res) {
         } else {
             req.body.completed = false
         }
+        req.body.userId = req.user._id
         const createdTask = await Todo.create(req.body)
         res.status(200).json(createdTask)
     } catch (e) {
