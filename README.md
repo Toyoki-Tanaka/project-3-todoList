@@ -12,4 +12,11 @@ Trello Board: https://trello.com/invite/b/JqbarVFc/ATTI81f92376fd9c2a919221011f5
 Application Link: []
 
 # Unsolved Problems
+- Date conversion
+- Placeholder text for edit 
+# Future Enhancements
+
+- Redirect the page when the user makes a new task and when the user updates a task instead of sending an alert
+- Maybe a different kind of way to keep track, like a checklist
+- Adding the ability to add different tasks in one list
 
