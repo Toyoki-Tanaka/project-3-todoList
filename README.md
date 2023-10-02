@@ -17,7 +17,7 @@ Application Link: https://to-do-list-hi94.onrender.com/
 # Future Enhancements
 
 - Redirect the page when the user makes a new task and when the user updates a task instead of sending an alert
-- Maybe a different kind of way to keep track, like a checklist
+- Maybe a different kind of way to keep track, like a checklist 
 - Adding the ability to add different tasks in one list
 - Show an error message when the user info is incorrect
 

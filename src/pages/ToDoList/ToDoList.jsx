@@ -46,7 +46,7 @@ function ToDoList(props) {
         // filter based on userId
         toDoList.filter(todos => todos.userId === props.user._id).map((todo, i) => {
             return (
-                <div key={i} id="tasks">
+                <div key={i} className="task-list">
                     <p>Task: {todo.task}</p>
                     <p>Completed: {todo.completed.toString().charAt(0).toUpperCase() + todo.completed.toString().slice(1)}</p>
                     <p>Due Date: {todo.dueDate.split('T00:00:00.000Z')}</p>
