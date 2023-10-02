@@ -41,6 +41,7 @@ function ToDoListDetails(props) {
         try {
             const toDoDetails = await todoAPI.editToDo(id, listDetails)
             console.log(toDoDetails)
+            alert("Task updated")
         } catch (err) {
             console.log(err)
             console.log(listDetails)

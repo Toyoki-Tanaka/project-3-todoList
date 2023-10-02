@@ -1,5 +1,4 @@
 import styles from './NewToDoPage.module.css'
-// import axios from 'axios'
 import * as todoAPI from '../../utilities/todo-api'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -21,25 +20,11 @@ function NewToDoPage(props) {
     const handleSubmit = async (event) => {
         event.preventDefault()
 
-        // axios
-        //     .post('http://localhost:5173/api/todo/new', formData)
-        //     .then((res) => {
-        //         setFormData({
-        //             task: '',
-        //             dueBy: '',
-        //             completed: ''
-        //         });
-
-        //         navigate('/todo/new');
-        //     })
-        //     .catch((err) => {
-        //         console.log("Todo creation failed")
-        //     })
 
         try {
             const newToDo = await todoAPI.addNewToDo(formData)
             console.log(newToDo)
-            // alert("Task created!")
+            alert("Task created!")
         } catch (err) {
             console.log(err)
         }

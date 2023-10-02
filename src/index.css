@@ -22,7 +22,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #D9C5BC;
+  background-color: #faedcb;
   padding: 2vmin;
   height: 100vh;
 }
@@ -159,7 +159,7 @@ button[type="submit"] {
 }
 
 #welcome {
-  background-color: beige;
+  background-color: #9EA1D4;
   border-radius: 1vh;
   padding: 1vh
 }

@@ -1,8 +1,15 @@
-# React + Vite
+# Introduction
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a to-do application that allows users to keep track of their tasks. Users have access to full CRUD (Create, Read, Update, Delete) functionality for each of their tasks.
 
-Currently, two official plugins are available:
+# Technologies used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This application was built using Mongoose, Express, React, Node.js, react-router-dom, and ViteJS
+
+# Getting Started
+
+Trello Board: https://trello.com/invite/b/JqbarVFc/ATTI81f92376fd9c2a919221011f5c6be8b92E258D4B/wireframe
+Application Link: []
+
+# Unsolved Problems
+

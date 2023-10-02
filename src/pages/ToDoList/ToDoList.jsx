@@ -45,7 +45,7 @@ function ToDoList() {
                 <div key={i} id="tasks">
                     <p>Task: {todo.task}</p>
                     <p>Completed: {todo.completed.toString()}</p>
-                    <p>Due Date: {todo.dueDate}</p>
+                    <p>Due Date: {todo.dueDate.toString()}</p>
                     <Link to={`${todo._id}/edit`}><button>Edit button</button></Link>
                     <button onClick={() => {
                         handleDelete(todo._id)
