@@ -6,7 +6,7 @@ Screenshot: https://imgur.com/Yeba6ip
 
 # Technologies used
 
-This application was built using Mongoose, Express, React, Node.js, react-router-dom, and ViteJS
+This application was built using Mongoose, Express, React, Node.js, react-router-dom, ViteJS, and JWT
 
 # Getting Started
 
