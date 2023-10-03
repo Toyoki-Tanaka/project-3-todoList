@@ -2,6 +2,8 @@
 
 This is a single-page to-do application that allows users to keep track of their tasks. Users have access to full CRUD (Create, Read, Update, Delete) functionality for each of their tasks.
 
+Screenshot: https://imgur.com/Yeba6ip
+
 # Technologies used
 
 This application was built using Mongoose, Express, React, Node.js, react-router-dom, and ViteJS
